@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.icon {
+  color: gray; /* Initial color */
+}
+
+.icon:hover {
+  color: #66451c; /* Hover color */
+}
+
+
