@@ -6,27 +6,25 @@ import { IoShieldCheckmarkSharp } from 'react-icons/io5';
 
 const FeatureSection = () => {
   return (
-    <div className="flex flex-col h-auto items-center justify-center bg-[#f4eee4] pt-20 pb-10">
+    <div className="flex flex-col h-auto items-center justify-center bg-[#f4eee4] py-20 px-10">
       {/* Section Container */}
-      <div className="mx-auto px-4">
-        {/* Section Header */}
-        <div className="text-center mb-8 pt-4">
-          <h2 className="text-5xl font-bold text-[#66451c]">
-            Why Choose Us?
-          </h2>
-          <p className="text-lg text-gray-600 mt-2">
-            Authentic Profiles | Secure Platform | Easy Communication
-          </p>
-        </div>
-
+      <div className="mx-auto">
         {/* Section Content */}
-        <div className="flex flex-row justify-center items-center md:grid-cols-2 gap-8 pt-6 mx-4 px-16 w-full">
+        <div className="flex flex-row justify-center items-center md:grid-cols-2 gap-8 mx-4 px-16 w-full">
           {/* Left Content */}
           <div className="space-y-8">
+          <div className="text-center">
+            <h2 className="text-5xl font-bold text-[#66451c]">
+              Why Choose Us?
+            </h2>
+            <p className="text-lg text-gray-600 mt-2">
+              Authentic Profiles | Secure Platform | Easy Communication
+            </p>
+          </div>
             {/* Benefit 1 */}
             <div className="flex items-start space-x-4">
               <div className="w-16 h-16">
-                <GoVerified className="text-5xl text-[#66451c]"/>
+                <GoVerified className="text-5xl text-[#66451c]" />
               </div>
               <div className="px-4">
                 <h4 className="text-xl font-semibold text-[#66451c]">
@@ -90,7 +88,7 @@ const FeatureSection = () => {
             {/* Benefit 5 */}
             <div className="flex items-start space-x-4">
               <div className="w-16 h-16">
-                <GoVerified  className="text-5xl text-[#66451c]"/>
+                <GoVerified className="text-5xl text-[#66451c]" />
               </div>
               <div className="px-4">
                 <h4 className="text-xl font-semibold text-[#66451c]">
@@ -107,7 +105,7 @@ const FeatureSection = () => {
 
           {/* Right Content:img */}
           <div className="relative">
-            <div className="w-full h-screen relative group">
+            <div className="w-full h-screen relative group flex justify-center items-center">
               <img
                 src="https://images.pexels.com/photos/1589216/pexels-photo-1589216.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                 alt="Promotional Video"
