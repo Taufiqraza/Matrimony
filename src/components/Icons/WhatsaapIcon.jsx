@@ -1,9 +1,10 @@
 import React from "react";
+import { Link } from "react-router";
 
 function WhatsaapIcon() {
   return (
     <div className="hover:bg-[#e7d5b4] px-2 text-[#e7d5b4] hover:text-[#66451c] flex flex-row justify-center items-center">
-      <a href="#">
+      <Link to="#">
         <svg
           width="20px"
           height="20px"
@@ -20,7 +21,7 @@ function WhatsaapIcon() {
             />
           </g>
         </svg>
-      </a>
+      </Link>
 
     </div>
   );

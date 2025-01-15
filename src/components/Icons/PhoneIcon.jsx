@@ -3,7 +3,7 @@ import React from "react";
 function PhoneIcon() {
   return (
     <div className="hover:bg-[#e7d5b4] px-3 text-[#e7d5b4] hover:text-[#66451c] flex flex-row justify-center items-center">
-      <a href="#" className="flex flex-row justify-center items-center gap-x-1 px-1">
+      <a to="#" className="flex flex-row justify-center items-center gap-x-1 px-1">
         <svg
           width="15px"
           height="15px"

@@ -1,14 +1,15 @@
 import React from "react";
-import SearchBtn from "./SearchBtn";
+import SearchBtn from "../SearchBtn";
 
-function Main() {
+function Hero() {
   return (
-    <div>
-      <div className="bg-[url('/src/assets/img/hero-img.webp')] w-screen h-screen bg-cover bg-no-repeat bg-center flex flex-col justify-start">
+    <>
+      {/* hero section */}
+      <div className="bg-[url('/src/assets/img/hero-img.webp')] w-full h-screen bg-cover bg-no-repeat bg-center flex flex-col justify-start">
         <div className="flex flex-col justify-start items-center font-serif bg-white/20 py-24 gap-y-6">
           <h3 className="text-2xl text-gray-800"><span className="text-[#66451c]">#1</span> Matrimony</h3>
           <h1 className="text-6xl text-center text-gray-800">Find your <br />
-           <span className="text-[#66451c] font-[400]"> Right Match </span>here</h1>
+            <span className="text-[#66451c] font-[400]"> Right Match </span>here</h1>
           <h4 className="text-3xl text-gray-800">Most trusted Matrimony Brand in the India</h4>
         </div>
         <div className="flex items-center justify-center bg-gradient-to-r">
@@ -19,7 +20,7 @@ function Main() {
                 <li className="flex-1">
                   <div className="form-group">
                     <select
-                      className="w-full border-gray-300 rounded-lg shadow-md  text-[#66451c] p-3 transition duration-300 font-semibold"
+                      className="w-full border-gray-300 rounded-lg shadow-md  text-[#66451c] p-3 transition duration-300 font-semibold "
                     >
                       <option value="">I'm looking for</option>
                       <option value="Men">Men</option>
@@ -56,7 +57,7 @@ function Main() {
                       <option value="Hindu">Hindu</option>
                       <option value="Muslim">Muslim</option>
                       <option value="Jain">Jain</option>
-                      <option value="Christian">Christian</option>
+                      <option value="Christian" >Christian</option>
                     </select>
                   </div>
                 </li>
@@ -84,8 +85,8 @@ function Main() {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 
-export default Main;
+export default Hero;

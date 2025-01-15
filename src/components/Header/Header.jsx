@@ -1,26 +1,27 @@
 import React from "react";
-import LoginForm from "./LoginForm";
-import SearchIcon from "./SearchIcon";
-import PhoneIcon from "./PhoneIcon";
-import MailIcon from "./MailIcon";
-import FacebookIcon from "./FacebookIcon";
-import TwitterIcon from "./TwitterIcon";
-import WhatsaapIcon from "./WhatsaapIcon";
+import LoginForm from "../Login/LoginForm";
+import SearchIcon from "../Icons/SearchIcon";
+import PhoneIcon from "../Icons/PhoneIcon";
+import MailIcon from "../Icons/MailIcon";
+import FacebookIcon from "../Icons/FacebookIcon";
+import TwitterIcon from "../Icons/TwitterIcon";
+import WhatsaapIcon from "../Icons/WhatsaapIcon";
+import { Link, NavLink } from "react-router";
 
 function Header() {
   return (
-    <header className="flex flex-col">
+    <header className="w-full flex flex-col">
       <div className="bg-[#66451c] flex flex-row justify-between items-center">
         <div className="flex flex-row px-14 justify-center items-center">
           <SearchIcon />
           <div className="hover:bg-[#e7d5b4]">
-            <a href="#" className="px-4 py-2 text-[#e7d5b4] hover:text-[#66451c] text-sm font-semibold">ABOUT</a>
+            <NavLink to="/about" className="px-4 py-2 text-[#e7d5b4] hover:text-[#66451c] text-sm font-semibold">ABOUT</NavLink>
           </div>
           <div className=" hover:bg-[#e7d5b4]">
-            <a href="#" className="px-4 py-2 text-[#e7d5b4] hover:text-[#66451c] text-sm font-semibold">FAQ</a>
+            <NavLink to="#" className="px-4 py-2 text-[#e7d5b4] hover:text-[#66451c] text-sm font-semibold">FAQ</NavLink>
           </div>
           <div className="hover:bg-[#e7d5b4]">
-            <a href="#" className="px-4 py-2 text-[#e7d5b4] hover:text-[#66451c] text-sm font-semibold">CONTACT</a>
+            <NavLink to="#" className="px-4 py-2 text-[#e7d5b4] hover:text-[#66451c] text-sm font-semibold">CONTACT</NavLink>
           </div>
         </div>
         <div className="flex flex-row px-14">
@@ -35,13 +36,13 @@ function Header() {
           <WhatsaapIcon/>
         </div>
       </div>
-      <div className="bg-[#f9f7f3] flex flex-row justify-between items-center px-14 py-2">
+      <div className="bg-white flex flex-row justify-between items-center px-14 py-2">
         <div className="bg-[#66451c] rounded px-2">
-          <a href="#"><img src="/src/assets/logo/sangam.svg" alt="logo" width="100px" /></a>
+          <Link to="/"><img src="/src/assets/logo/sangam.svg" alt="logo" width="100px" /></Link>
         </div>
         <nav className="flex flex-row justify-evenly items-center gap-x-16">
           <div className="relative text-[#66451c] group">
-            <a href="#" className="flex items-center gap-0">Language
+            <Link to="#" className="flex items-center gap-0">Language
               <svg
                 className="w-4 h-4"
                 xmlns="http://www.w3.org/2000/svg"
@@ -54,17 +55,17 @@ function Header() {
                   clipRule="evenodd"
                 />
               </svg>
-            </a>
+            </Link>
 
             <div className="absolute top-full bg-[#e7d5b4] text-[#66451c] py-6 rounded hidden group-hover:flex flex-col gap-y-4 text-center">
-              <a href="#" className="hover:bg-[#f9f7f3] rounded px-4">Hindi</a>
-              <a href="#" className="hover:bg-[#f9f7f3] rounded px-4">Marathi</a>
-              <a href="#" className="hover:bg-[#f9f7f3] rounded px-4">Telegu</a>
+              <Link to="#" className="hover:bg-[#f9f7f3] rounded px-4">Hindi</Link>
+              <Link to="#" className="hover:bg-[#f9f7f3] rounded px-4">Marathi</Link>
+              <Link to="#" className="hover:bg-[#f9f7f3] rounded px-4">Telegu</Link>
             </div>
           </div>
           <LoginForm />
-          <div className="text-[#66451c]"><a href="#">Register</a></div>
-          <div className="text-[#66451c]"><a href="#">Help</a></div>
+          <div className="text-[#66451c]"><Link to="#">Register</Link></div>
+          <div className="text-[#66451c]"><Link to="#">Help</Link></div>
         </nav>
       </div>
 
