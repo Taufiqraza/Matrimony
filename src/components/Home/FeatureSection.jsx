@@ -6,7 +6,7 @@ import { IoShieldCheckmarkSharp } from 'react-icons/io5';
 
 const FeatureSection = () => {
   return (
-    <div className="flex flex-col items-center justify-center bg-[#f4eee4] pt-20 py-10">
+    <div className="flex flex-col h-auto items-center justify-center bg-[#f4eee4] pt-20 pb-10">
       {/* Section Container */}
       <div className="mx-auto px-4">
         {/* Section Header */}
