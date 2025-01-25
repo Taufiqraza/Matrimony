@@ -3,6 +3,7 @@ import Hero from "./Hero";
 import FeatureSection from "./FeatureSection";
 import Stories from "./Stories";
 import HelpSupport from "./HelpSupport";
+import AboutSection from "./AboutSection";
 
 function Home() {
   return (
@@ -10,7 +11,7 @@ function Home() {
       <Hero />
       <FeatureSection />
       <Stories />
-      <HelpSupport/>
+      <HelpSupport/> 
     </>
   );
 }

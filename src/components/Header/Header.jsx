@@ -31,7 +31,9 @@ function Header() {
           <div className="flex flex-row">
             <MailIcon/>
           </div>
-          <FacebookIcon/>
+           <div className="hover:bg-[#e7d5b4] px-2 text-[#e7d5b4] hover:text-[#66451c] flex flex-row justify-center items-center">
+            <FacebookIcon  />
+           </div>
           <TwitterIcon/>
           <WhatsaapIcon/>
         </div>

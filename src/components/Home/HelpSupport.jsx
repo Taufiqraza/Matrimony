@@ -1,4 +1,5 @@
 import React from "react";
+import AboutSection from "./AboutSection";
 
 function HelpSupport() {
   return (
@@ -25,8 +26,9 @@ function HelpSupport() {
             </a>
           </div>
         </div>
+        <AboutSection/>
       </div>
-
+      
     </>
   );
 }
