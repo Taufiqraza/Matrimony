@@ -2,13 +2,15 @@ import React from "react";
 import Hero from "./Hero";
 import FeatureSection from "./FeatureSection";
 import Stories from "./Stories";
+import HelpSupport from "./HelpSupport";
 
 function Home() {
-    return (
+  return (
     <>
-      <Hero/>
-      <FeatureSection/>
-      <Stories/>
+      <Hero />
+      <FeatureSection />
+      <Stories />
+      <HelpSupport/>
     </>
   );
 }
