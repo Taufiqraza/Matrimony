@@ -1,120 +1,134 @@
-import React from "react";
-import { Link } from "react-router";
-import { FaFacebookF } from "react-icons/fa6";
-import { FaWhatsapp } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
+import { FaReact, FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { Link } from 'react-router';
+export default () => {
+  const footerNavs = [
+    {
+      label: "Matrimony Services",
+      items: [
+        { onClick: () => { }, name: "Search Profiles" },
+        { onClick: () => { }, name: "Matchmaking" },
+        { onClick: () => { }, name: "Premium Plans" },
+        { onClick: () => { }, name: "Testimonials" },
+      ],
+    },
+    {
+      label: "Company",
+      items: [
+        { onClick: () => { }, name: "About Us" },
+        { onClick: () => { }, name: "Our Mission" },
+        { onClick: () => { }, name: "Careers" },
+        { onClick: () => { }, name: "Contact Us" },
+      ],
+    },
+    {
+      label: "Policies",
+      items: [
+        { onClick: () => { }, name: "Privacy Policy" },
+        { onClick: () => { }, name: "Terms of Service" },
+        { onClick: () => { }, name: "Refund Policy" },
+        { onClick: () => { }, name: "Cookie Policy" },
+      ],
+    },
+    {
+      label: "Connect",
+      items: [
+        { onClick: () => { }, name: "Blog" },
+        { onClick: () => { }, name: "FAQ" },
+        { onClick: () => { }, name: "Social Media" },
+        { onClick: () => { }, name: "Affiliate Program" },
+      ],
+    },
+  ];
 
-function Footer() {
   return (
-    <>
-      <section className="bg-gray-100 text-[#66451c] py-12">
-        <div className="container mx-auto px-6">
-          {/* Support Info */}
-          <div className="text-center mb-12">
-            <h2 className="text-lg md:text-2xl font-semibold">
-              <span className="text-gray-900">Free support:</span> +92 (8800) 68 - 8960
-              <span className="text-gray-400 mx-2">|</span>
-              <span className="text-gray-900">Email:</span> info@example.com
-            </h2>
+    <footer className="pt-20 bg-[#66451c]">
+      <div className="max-w-screen-xl mx-auto px-6 md:px-8">
+        <div className="justify-between items-center gap-12 md:flex">
+          <div className="flex-1 max-w-lg">
+            <h3 className="text-white text-2xl font-bold">
+              Join us today and find your perfect match.
+            </h3>
           </div>
-
-          {/* Footer Content */}
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 justify-items-center px-10">
-            {/* Get In Touch */}
-            <div className="ml-4">
-              <h4 className="text-xl font-bold mb-4 text-gray-900">Get In Touch</h4>
-              <ul className="space-y-2 text-gray-700">
-                <li>
-                  <span className="font-semibold">Address:</span>
-                  3812 Lena Lane, Jackson, Mississippi
-                </li>
-                <li>
-                  <span className="font-semibold">Phone:</span>
-                  <Link href="tel:+917904462944" className="text-[#66451c] hover:underline">
-                    +92 (8800) 68 - 8960
-                  </Link>
-                </li>
-                <li>
-                  <span className="font-semibold">Email:</span>
-                  <Link href="mailto:info@example.com" className="text-[#66451c] hover:underline">
-                    info@example.com
-                  </Link>
-                </li>
-              </ul>
-            </div>
-
-            {/* Help & Support */}
-            <div>
-              <h4 className="text-xl font-bold mb-4 text-gray-900">Help & Support</h4>
-              <ul className="space-y-2">
-                <li>
-                  <Link href="about-us.html" className="text-gray-700 hover:text-[#66451c]">
-                    About Company
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#!" className="text-gray-700 hover:text-[#66451c]">Contact Us</Link>
-                </li>
-                <li>
-                  <Link href="#!" className="text-gray-700 hover:text-[#66451c]">Feedback</Link>
-                </li>
-                <li>
-                  <Link href="about-us.html#faq" className="text-gray-700 hover:text-[#66451c]">FAQs</Link>
-                </li>
-                <li>
-                  <Link href="about-us.html#testimonials" className="text-gray-700 hover:text-[#66451c]">Testimonials</Link>
-                </li>
-              </ul>
-            </div>
-
-            {/* Join Us */}
-            <div>
-              <h4 className="text-xl font-bold mb-4 text-gray-900">Join Us</h4>
-              <p className="text-gray-700 mb-4">
-                Trusted by thousands for successful marriages. Join our growing community today!
-              </p>
-              <Link
-                href="sign-up.html"
-                className="inline-block bg-[#66451c] text-white px-6 py-2 rounded hover:bg-gray-900 transition-all"
-              >
-                Sign Up Now
-              </Link>
-            </div>
-
-            {/* Social Media */}
-            <div>
-              <h4 className="text-xl font-bold mb-4 text-gray-900 text-center">Follow Us</h4>
-              <div className="flex space-x-4 mx-auto">
-                <Link href="#" className="hover:opacity-80">
-                  <FaFacebookF />
-                </Link>
-                <Link href="#" className="hover:opacity-80">
-                  <FaWhatsapp />
-                </Link>
-                <Link href="#" className="hover:opacity-80">
-                  <FaTwitter />
-                </Link>
-                <Link href="#" className="hover:opacity-80">
-                  <FaInstagram />
-                </Link>
+          <div className="flex-1 mt-6 md:mt-0">
+            <form onSubmit={(e) => e.preventDefault()} className="flex items-center gap-x-3 md:justify-end">
+              <div className="relative">
+                <svg
+                  className="w-6 h-6 text-gray-400 absolute left-3 inset-y-0 my-auto"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
+                  />
+                </svg>
+                <input
+                  type="email"
+                  required
+                  placeholder="Enter your email"
+                  className="w-full pl-12 pr-3 py-2 text-gray-500 bg-white outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
+                />
               </div>
-            </div>
-          </div>
-
-          {/* Footer Bottom */}
-          <div className="mt-12 border-t border-gray-300 pt-6 text-center">
-            <p className="text-sm text-gray-600">
-              © 2025 Company Name. All rights reserved.
-            </p>
+              <button className="block w-auto py-3 px-4 font-medium text-sm text-center text-white bg-gray-800 hover:bg-gray-500 active:bg-gray-700 active:shadow-none rounded-lg shadow">
+                Subscribe
+              </button>
+            </form>
           </div>
         </div>
-      </section>
+        <div className="flex-1 mt-16 space-y-6 justify-between sm:flex md:space-y-0">
+          {footerNavs.map((item, idx) => (
+            <ul className="space-y-4 text-gray-300" key={idx}>
+              <h4 className="text-gray-200 font-semibold sm:pb-2">{item.label}</h4>
+              {item.items.map((el, idx) => (
+                <li key={idx}>
+                  <a
+                    href="#"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      el.onClick();
+                    }}
+                    className="duration-150 hover:text-gray-400"
+                  >
+                    {el.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          ))}
+        </div>
+        <div className="mt-10 py-10 border-t border-gray-700 items-center justify-between sm:flex">
+          <p className="text-gray-300">© 2022 Matrimonial Services Inc. All rights reserved.</p>
+          <div className="flex items-center gap-x-6 text-gray-400 mt-6">
+            {/* Social icons */}
+            <div className="flex items-center gap-x-6 text-gray-400 mt-6">
 
+              {/* Facebook */}
+              <Link to="/facebook" aria-label="Facebook" className="hover:text-blue-700 duration-150">
+                <FaFacebook className="w-6 h-6" />
+              </Link>
 
+              {/* Twitter */}
+              <Link to="/twitter" aria-label="Twitter" className="hover:text-blue-400 duration-150">
+                <FaTwitter className="w-6 h-6" />
+              </Link>
 
-    </>
-  )
-}
+              {/* Instagram */}
+              <Link to="/instagram" aria-label="Instagram" className="hover:text-pink-500 duration-150">
+                <FaInstagram className="w-6 h-6" />
+              </Link>
 
-export default Footer;
+              {/* LinkedIn */}
+              <Link to="/linkedin" aria-label="LinkedIn" className="hover:text-blue-600 duration-150">
+                <FaLinkedin className="w-6 h-6" />
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+};
