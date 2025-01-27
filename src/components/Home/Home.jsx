@@ -9,9 +9,9 @@ function Home() {
   return (
     <>
       <Hero />
+      <Stories/>
       <FeatureSection />
       <Stats/>
-      <Stories/>
       <Gallery/>
     </>
   );
