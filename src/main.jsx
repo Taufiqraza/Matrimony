@@ -5,6 +5,7 @@ import App from './App.jsx'
 import { createBrowserRouter, RouterProvider } from 'react-router'  
 import About from './components/About/About.jsx'
 import Home from './components/Home/Home.jsx'
+import LoginForm from './components/Login/LoginForm.jsx'
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
       {
         path: 'about',
         element: <About/>
+      },
+      {
+        path: 'login',
+        element: <LoginForm/>
       }
     ]
   }

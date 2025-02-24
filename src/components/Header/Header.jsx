@@ -58,15 +58,13 @@ function Header() {
                 />
               </svg>
             </Link>
-
             <div className="absolute top-full bg-[#e7d5b4] text-[#66451c] py-6 rounded hidden group-hover:flex flex-col gap-y-4 text-center">
               <Link to="#" className="hover:bg-[#f9f7f3] rounded px-4">Hindi</Link>
               <Link to="#" className="hover:bg-[#f9f7f3] rounded px-4">Marathi</Link>
               <Link to="#" className="hover:bg-[#f9f7f3] rounded px-4">Telegu</Link>
             </div>
           </div>
-          <LoginForm />
-          <div className="text-[#66451c]"><Link to="#">Register</Link></div>
+          <div className="text-[#66451c]"><Link to="login">Login</Link></div>
           <div className="text-[#66451c]"><Link to="#">Help</Link></div>
         </nav>
       </div>
