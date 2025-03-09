@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 const Profile = () => {
-  // Sample user data - in a real app, this would come from props or an API
+ 
   const [userData] = useState({
     basicInfo: {
       name: "Priya Sharma",
@@ -64,6 +64,7 @@ const Profile = () => {
   const [activeTab, setActiveTab] = useState('about');
 
   return (
+    
     <div className="max-w-4xl mx-auto bg-white rounded-lg shadow-md overflow-hidden py-10">
       {/* Profile Header */}
       <div className="bg-gradient-to-r from-gray-800 to-[#66451c] p-6 text-white">

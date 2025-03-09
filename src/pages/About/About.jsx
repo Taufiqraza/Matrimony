@@ -67,10 +67,10 @@ function About() {
       </section>
 
       {/* Call to Action Section */}
-      <section className="bg-[#66451C] py-16 text-white text-center">
+      <section className="bg-white py-16 text-white text-center">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-semibold mb-4">Ready to Join Us?</h2>
-          <p className="text-lg mb-6">Get in touch with us today and be part of something special!</p>
+          <h2 className="text-3xl font-semibold mb-4 text-gray-800">Ready to Join Us?</h2>
+          <p className="text-lg mb-6 text-gray-800">Get in touch with us today and be part of something special!</p>
           <Link to="/contact" className="bg-[#e7d5b4] text-[#66451C] px-8 py-3 rounded font-semibold hover:bg-[#62661C]">Contact Us</Link>
         </div>
       </section>
