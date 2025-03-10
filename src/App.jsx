@@ -18,6 +18,7 @@ function App() {
           <Route path="/login" element={<LoginForm/>}/>
           <Route path="/register" element={<RegisterForm/>}/>
           <Route path="/forgot-password" element={<ForgotPassword />} />
+          <Route path="/profile" element={<Profile />} />
         </Routes>
       </MainLayout>
     </>
