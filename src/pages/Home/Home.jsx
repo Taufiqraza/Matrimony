@@ -4,15 +4,17 @@ import FeatureSection from "./FeatureSection";
 import Stats from "./Stats";
 import Gallery from "./Gallery";
 import Stories from "./Stories";
+import { Popup } from "./../../components/index";
 
 function Home() {
   return (
     <>
+      <Popup />
       <Hero />
-      <Stories/>
+      <Stories />
       <FeatureSection />
-      <Stats/>
-      <Gallery/>
+      <Stats />
+      <Gallery />
     </>
   );
 }

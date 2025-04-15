@@ -65,7 +65,7 @@ const Profile = () => {
 
   return (
     
-    <div className="max-w-4xl mx-auto bg-white rounded-lg shadow-md overflow-hidden py-10">
+    <div className="max-w-4xl mx-auto bg-white rounded-lg shadow-md overflow-hidden pb-10 my-20">
       {/* Profile Header */}
       <div className="bg-gradient-to-r from-gray-800 to-[#66451c] p-6 text-white">
         <h1 className="text-2xl font-bold">{userData.basicInfo.name}</h1>
